@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import 'variables';
 
 * {
     font-family: "Poppins", sans-serif;
     outline: none;
 }
 
-$gray: #cecece;
-
 body {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid #cecece;
+    border: 1px solid $gray;
 }
 
 header {
@@ -20,8 +19,6 @@ header {
 
 form {
     padding: 10px;
-    width: auto;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -49,7 +46,7 @@ form {
         padding: 0 0 0 10px;
 
         margin: 0px 5px 5px;
-        border: 1px solid #cecece;
+        border: 1px solid $gray;
         border-radius: 8px;
     }
 
@@ -65,7 +62,7 @@ form {
         height: 100%;
         margin: 0px 5px 5px;
         padding: 10px;
-        border: 1px solid #cecece;
+        border: 1px solid $gray;
         border-radius: 8px;
     }
 
