@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+$gray: #cecece;
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #cecece;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+form {
+    padding: 10px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fields {
+    width: 300px;
+    height: 48px;
+    margin: 10px;
+    position: relative;
+
+    label {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        font-size: 16px;
+        transform: translateY(-50%);
+        transition: all 0.8s ease;
+        background: white;
+        color: black;
+    }
+
+    input {
+        height: 100%;
+        width: 300px;
+        padding: 0 0 0 10px;
+
+        margin: 0px 5px 5px;
+        border: 1px solid #cecece;
+        border-radius: 8px;
+    }
+
+    input:focus + label,
+    input:valid + label {
+        font-size: 12px;
+        top: 0;
+        padding: 5px;
+    }
+
+    select {
+        width: 310px;
+        height: 100%;
+        margin: 0px 5px 5px;
+        padding: 10px;
+        border: 1px solid #cecece;
+        border-radius: 8px;
+    }
+
+    .fields select:focus + label,
+    .fields select:valid + label {
+        font-size: 12px;
+        top: 0;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .fields input,
+    .fields select {
+        width: 100%;
+    }
+}
+
