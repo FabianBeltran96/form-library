@@ -1,0 +1,9 @@
+@mixin inputs() {
+    width: 300px;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    border: 1px solid $gray;
+    border-radius: 8px;
+}
