@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 80%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid #cecece;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+form {
+  width: 100%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fields {
+  width: 300px;
+  height: 48px;
+  margin: 10px;
+  position: relative;
+}
+
+.fields label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  background: white;
+  color: black;
+}
+
+.fields input,
+.fields select {
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  text-indent: 15px;
+}
+
+.fields input:focus + label,
+.fields input:valid + label,
+.fields select:focus + label,
+.fields select:valid + label {
+  font-size: 12px;
+  top: 0;
+  padding: 5px;
+}
+
+.toggle {
+  position: relative;
+  display: inline;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background: #aebbd3;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 24px;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: #5c7cef;
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  content: "OFF";
+  color: gray;
+  left: 0;
+  width: 50px;
+  height: 40px;
+  background: white;
+  border-radius: 30px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+input[type="checkbox"]:checked::before {
+  width: 50px;
+  color: #5c7cef;
+  content: "ON";
+  left: 50px;
+}
+/*# sourceMappingURL=style.css.map */
